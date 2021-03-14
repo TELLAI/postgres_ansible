@@ -30,6 +30,8 @@ Cette application utilise les technologies suivantes:
 ## Installation
 
 1- Cloner ce repository en local
+
 2- Aller sur le fichier hosts et remplacer l'adresse IP par l'adresse IP de votre VM
-2- Executer cette commande pour ouvrir le project sur un conteneur docker:
+
+3- Executer cette commande pour ouvrir le project sur un conteneur docker:
 ====> ansible-playbook -i hosts --user=(nom_user) --key-file (path of key) playbook.yml
