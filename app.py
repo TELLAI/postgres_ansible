@@ -1,10 +1,7 @@
+from flask import Flask, jsonify
 import psycopg2
-from flask import Flask, render_template, request, jsonify, redirect, url_for
-import os
-from dotenv import load_dotenv
 app = Flask(__name__)
 
-load_dotenv()
 host = 'localhost'
 dbname = 'test_ansible'
 user = 'youcef'
@@ -20,7 +17,7 @@ def Home():
 @app.route('/inc', methods=['GET', 'POST'])
 def Insert():
     cur = conn.cursor()
-    data = "test"
+    cur.execute("CREATE TABLE IF NOT EXISTS test2 (id serial PRIMARY KEY, num_test int)")
     cur.execute("INSERT INTO test2(num_test) VALUES(100);")
     result = "insertion data"
     return jsonify(result)
