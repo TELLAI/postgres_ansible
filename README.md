@@ -2,10 +2,6 @@
 
 ## Introduction au déploiement automatisé avec Ansible !!!
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 Ce repository contient un premier déploiement sur une machine virtuel Azure.
 
 ## Features
